@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brighters - AI for Climate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- AI Chat Section -->
+    <section id="chat" class="chat-section">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-header-content">
+                    <img src="/public/icons/message-circle.svg" alt="Chat" class="chat-icon">
+                    <div>
+                        <h2 class="chat-title">Ask Brighters AI</h2>
+                        <p class="chat-status">
+                            <span class="status-indicator"></span>
+                            Online
+                        </p>
+                    </div>
+                </div>
+                <div class="language-switcher">
+                    <button id="lang-bn">বাংলা</button>
+                    <button id="lang-en">English</button>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <img src="/public/icons/brain-circuit.svg" alt="AI" class="avatar-icon">
+                    </div>
+                    <div class="message-content">
+                        <p>ব্রাইটার্স এআই-তে আপনাকে স্বাগতম।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    id="chatInput" 
+                    class="chat-input" 
+                    placeholder="Ask about climate solutions, carbon footprint, renewable energy..."
+                    autocomplete="off"
+                >
+                <button class="send-button" id="sendButton">
+                    <img src="/public/icons/send.svg" alt="Send" class="send-icon">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
